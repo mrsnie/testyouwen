@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/six.css" />
+		<script type="text/javascript" src="js/jquery-3.0.0.min.js" ></script>
+	    <script type="text/javascript" src="js/goTop.js" ></script>
+	</head>
+	<body>
+		<div class="top">
+			<a href=""><img src="img/logo.png" class="lo1"/></a>
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="two.html">教学理念</a></li>
+				<li><a href="three.html">课程体系</a></li>
+				<li><a href="four.html">师资力量</a></li>
+				<li><a href="five.html">学习流程</a></li>
+				<li><a href="six.html">优问课堂</a></li>
+				<li><a href="seven.html">学习一对一</a></li>
+			</ul>
+			<span>电话：400-777-5029</span>
+		</div>
+		<div class="center">
+		</div>
+		<div class="centers">
+			<div class="c1">
+				<ul>
+					<li>热门推荐</li>
+					<li>优问咨询</li>
+					<li>学生课堂</li>
+					<li>家长课堂</li>
+				</ul>
+			</div>
+			<div class="c2">
+				<img src="img/class/news1.png" />
+				<p>怎样才能更好的教育孩子</p>
+				<p>时代光华教师大概是觉得就是的故事就是大哥介绍给大家 给大家说过僵尸国度就是大哥教师大概就是打个就是大哥就是大哥收到收到收到</p>
+				<p>2016-12-02</p>
+			</div>
+			<div class="c3">
+				<p><span></span>热门文章</p>
+				<p>1</p>
+				<p>2</p>
+				<p>3</p>
+			</div>
+			<div class="c4">
+				<ul>
+					<li>上一页</li>
+					<li>1</li>
+					<li>下一页</li>
+				</ul>
+		   </div>
+		</div>
+		<div class="footer">
+			<p>
+			<input type="text" placeholder="姓名" />
+			<input type="text" placeholder="手机号码" />
+			<input type="text" placeholder="电子邮箱" />
+			<select>
+				<option value="">阶段</option>
+				<option value="">小学</option>
+				<option value="">初中</option>
+				<option value="">高中</option>
+				<option value="">冲刺班</option>
+			</select>
+			<select>
+				<option value="">年级</option>
+				<option value="">一年级</option>
+				<option value="">二年级</option>
+				<option value="">三年级</option>
+				<option value="">四年级</option>
+				<option value="">五年级</option>
+				<option value="">六年级</option>
+			</select>
+			<select>
+				<option value="">科目</option>
+				<option value="">语文</option>
+				<option value="">数学</option>
+				<option value="">英语</option>
+			</select>
+			</p>
+			<p>Copyright &copy; 上海优问教育科技有限公司</p>
+		</div>
+		<div class="nav">
+			<div class="n1"><img src="img/wechatcode.png"/></div>
+			<div class="n5"><img src="img/codepic.png"/></div>
+			<div class="n2"><img src="img/lineserver.png"/></div>
+			<div class="n3"><img src="img/backtop.png"/></div>
+			<div class="n4"><img src="img/gotop.png"/></div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$(".n4").goTop({"animate":"slide","speed":"2000"});
+			   $(".n4").css("display","none");
+			$(".n3").mouseover(function(){
+				 $(".n4").css("display","block");
+				 $(".n3").css("display","none");
+			})
+			$(".n4").mouseout(function(){
+				 $(".n4").css("display","none");
+				 $(".n3").css("display","block");
+			});
+	    $(".n1").mouseover(function(){
+				 $(".n5").css({"display":"block","position":"absolute","top":"0","left":"-120px" });
+			})
+		$(".n1").mouseout(function(){
+			$(".n5").css("display","none");
+		})	
+		});
+	</script>
+</html>

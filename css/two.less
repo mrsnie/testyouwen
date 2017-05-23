@@ -1,0 +1,303 @@
+@charset "utf-8";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    margin :0 auto;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+li{
+    list-style: none;
+}
+ @wd:100%;
+ @bk:red;
+ @bd:1px solid red;
+.top1{
+    width: @wd;
+    height: 90px;
+    background-color: #FFFFFF;
+    margin: 0 auto; 
+    z-index: 888;
+    position: fixed;
+    right: 0;
+    left: 0;
+    .top{
+        width: 1200px;
+        height: 90px;
+        .lo1{
+            width: 200px;
+            height: 31px;
+            margin:25px 50px;
+            float: left;
+        } 
+        li{
+            width: 90px;
+            height: 90px;
+            float: left;
+            a{
+            color: #000;
+            line-height: 90px;
+            text-align: center;
+            display: block;
+           }
+          &:hover a{
+                border-bottom: 3px solid red;
+                color: red;
+           }
+       }
+      span{
+        width: 180px;
+        height: 40px;
+        display: block;
+        background-image: url(../img/phone.png);
+        background-repeat: no-repeat;
+        margin: 36px 28px;
+        float: left;
+        text-align: center;
+       }   
+   }
+ } 
+//center   star
+.center{
+    width: @wd;
+    height: 500px;
+    background-image: url(../img/teachidea/banner.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    p:first-child{
+        width: @wd;
+        height: 180px;
+        font-size: 40px;
+        text-align: center;
+        line-height: 180px;
+       font-weight: bold; 
+    }
+    p:nth-child(2){
+        width: @wd;
+        height:40px;
+        font-size: 40px;
+        color: red;
+        text-align: center;
+        line-height:40px;
+         font-weight: bold;
+    }
+    p:last-child{
+        width: 200px;
+        height:60px;
+        background-color: @bk;
+        border-radius: 10px;
+        text-align: center;
+        line-height: 60px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #FFFFFF;
+        margin: 100px auto;
+        cursor: pointer;
+        }
+        p:last-child:hover{
+            opacity: 0.7;
+        }
+    
+}
+.pics{
+    width: @wd;
+    height:@wd;
+    background-image: url(../img/teachidea/cont1bg.png);
+    background-repeat: no-repeat;
+    background-size:50%;
+    background-position:center center;
+    p{
+        width: @wd;
+        padding-top:100px;
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+        color: #777;
+
+       
+    }
+}
+.tcon{
+    width: @wd;
+    height: @wd;
+    background-image: url(../img/teachidea/cont2bg.png);
+    background-repeat: no-repeat;
+    background-size:50%;
+    background-position: center center;
+    background-color: #e8f4ff;
+   p{
+        font-size: 30px;
+        padding-top: 120px;
+        text-align: center;
+        color: #4ba8ff; 
+        font-weight: bold;
+        margin-bottom: 100px;
+    }
+}
+.picter{
+    width: @wd;
+    height:@wd;
+    background-image: url(../img/teachidea/cont3bg.png);
+    background-repeat: no-repeat;
+    background-size:50%;
+    background-position: center center;
+    p{
+        font-size: 30px;
+        text-align: center;
+        padding-top: 120px;
+        font-weight: bold;
+    }
+}
+.pictes{
+    width: @wd;
+    height: @wd;
+    background-image: url(../img/teachidea/cont4bg.png);
+    background-repeat: no-repeat;
+    background-size:50%;
+    background-position: center center;
+    p{
+        font-size: 30px;
+        text-align: center;
+        padding-top: 120px;
+        color: #ffa800; 
+        font-weight: bold;
+    }
+}
+.footer{
+    width: @wd;
+    height: 100px;
+    float: left;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 888;
+    p:first-child{
+    width: 100%;
+    height: 50px;
+    background-color: #777;
+    line-height: 50px;
+    padding-left:30%;
+    z-index: 888;
+   }
+   p:last-child{
+    width: @wd;
+    height:50px;
+    background-color: #444;
+    line-height:50px;
+    text-align: center;
+    font-weight: bold;
+    color: #FFFFFF;
+ }   
+}
+.nav{
+    width: 60px;
+    height:200px;
+    position: fixed;
+    bottom: 200px;
+    right: 100px;
+    .n1{
+    width: 50px;
+    height: 60px;
+    margin-bottom: 5px;
+   }
+   .n2{
+    width: 50px;
+    height: 60px;
+    margin-bottom: 5px;
+   }
+   .n3{
+    width: 50px;
+    height: 60px;
+    }
+    .n4{
+    width: 50px;
+    height: 60px;
+    }
+    .n5{
+        display: none;
+    }
+       
+}
+
+.models{
+    width:800px;
+    height: 380px;
+    padding-top: 80px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+    .m1{
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    border-right: 1px solid #ccc;
+        p{
+        width: 100%;
+        height: 40px;
+        font-size: 25px;
+        font-weight: bold;
+         }
+    }
+    .m2{
+    text-align: center;
+        input{
+        width: 260px;
+        height: 35px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-size:18px;
+         }
+     select{
+      width: 80px;
+      height: 30px;
+      border-radius: 5px;
+      }
+      .close{
+    width: 40px;
+    height: 40px;
+    text-align: centre;
+    line-height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    color: #777777;
+     }
+     i{
+    width: 200px;
+    height: 40px;
+    font-style: normal;
+    display: block;
+    border-radius: 10px;
+    background-color: red;
+    color: #FFFFFF;
+    float: right;
+    text-align: center;
+    line-height: 40px;
+    margin: 30px 90px;
+    }
+   }
+} 
+.mask{
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.5;
+    z-index:888;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+       
+     

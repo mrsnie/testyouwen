@@ -1,0 +1,359 @@
+@charset "utf-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+li {
+  list-style: none;
+}
+.top1 {
+  width: 100%;
+  height: 90px;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  z-index: 888;
+  position: fixed;
+  right: 0;
+  left: 0;
+}
+.top1 .top {
+  width: 1200px;
+  height: 90px;
+}
+.top1 .top .lo1 {
+  width: 200px;
+  height: 31px;
+  margin: 25px 50px;
+  float: left;
+}
+.top1 .top li {
+  width: 90px;
+  height: 90px;
+  float: left;
+}
+.top1 .top li a {
+  color: #000;
+  line-height: 90px;
+  text-align: center;
+  display: block;
+}
+.top1 .top li:hover a {
+  border-bottom: 3px solid red;
+  color: red;
+}
+.top1 .top span {
+  width: 180px;
+  height: 40px;
+  display: block;
+  background-image: url(../img/phone.png);
+  background-repeat: no-repeat;
+  margin: 36px 28px;
+  float: left;
+  text-align: center;
+}
+.pics {
+  width: 100%;
+  height: 600px;
+  padding-top: 80px;
+  text-align: center;
+  background-image: url(../img/teach/teacher_banner.png);
+  background-repeat: no-repeat;
+  background-position: center 60px;
+  position: relative;
+}
+.pics p {
+  width: 200px;
+  height: 60px;
+  background-color: red;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 60px;
+  color: #FFFFFF;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  position: absolute;
+  bottom: 100px;
+  right: 450px;
+}
+.pics p:hover {
+  opacity: 0.7;
+}
+.picter {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+}
+.picter p:first-child {
+  width: 100%;
+  height: 100px;
+  font-size: 40px;
+  padding-top: 20px;
+  font-weight: bold;
+}
+.picter p:first-child span {
+  color: red;
+}
+.picter p:last-child {
+  width: 100%;
+  height: 100px;
+  font-size: 30px;
+  color: #777;
+  font-weight: bold;
+}
+.picters {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  padding: 0 100px;
+}
+.picters li {
+  width: 33.33%;
+  height: 500px;
+  float: left;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 350px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center 50px;
+}
+.picters li:first-child {
+  background-image: url(../img/teach/teach_change1.png);
+}
+.picters li:nth-child(2) {
+  background-image: url(../img/teach/teach_change2.png);
+}
+.picters li:last-child {
+  background-image: url(../img/teach/teach_change3.png);
+}
+.picters li:first-child:hover {
+  background-image: url(../img/teach/teach_change11.png);
+}
+.picters li:nth-child(2):hover {
+  background-image: url(../img/teach/teach_change22.png);
+}
+.picters li:last-child:hover {
+  background-image: url(../img/teach/teach_change33.png);
+}
+.picters p {
+  width: 200px;
+  height: 60px;
+  background-color: red;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+  color: #FFFFFF;
+  font-weight: bold;
+  position: absolute;
+  bottom: 50px;
+  left: 42%;
+}
+.picters p:hover {
+  opacity: 0.7;
+}
+.center {
+  width: 100%;
+  height: 800px;
+  background-image: url(../img/tab3-bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.center p:first-child {
+  width: 1200px;
+  height: 180px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 180px;
+}
+.center p:first-child span {
+  color: red;
+  font-size: 45px;
+}
+.center li {
+  width: 100%;
+  height: 60px;
+  margin: 20px 0;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 60px;
+  font-weight: bold;
+  font-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.center li:hover {
+  transform: scale(0.8);
+  transition-property: all;
+  transition-duration: 0.75s;
+  transition-timing-function: initial;
+  transition-delay: initial;
+  transform-origin: center center;
+}
+.center li:first-child {
+  background-image: url(../img/tixing1.png);
+}
+.center li:nth-child(2) {
+  background-image: url(../img/tixing2.png);
+}
+.center li:nth-child(3) {
+  background-image: url(../img/tixing3.png);
+}
+.center li:nth-child(4) {
+  background-image: url(../img/tixing4.png);
+}
+.center li:nth-child(5) {
+  background-image: url(../img/tixing5.png);
+}
+.center li:nth-child(6) {
+  background-image: url(../img/tixing6.png);
+}
+.center p:last-child {
+  width: 200px;
+  height: 60px;
+  display: block;
+  text-align: center;
+  line-height: 60px;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: red;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 30px 42% ;
+}
+.center p:last-child:hover {
+  opacity: 0.7;
+}
+.footer {
+  width: 100%;
+  height: 100px;
+}
+.footer p:first-child {
+  width: 100%;
+  height: 50px;
+  background-color: #777;
+  line-height: 50px;
+  padding-left: 30%;
+}
+.footer p:last-child {
+  width: 100%;
+  height: 50px;
+  background-color: #444;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+.nav {
+  width: 60px;
+  height: 200px;
+  position: fixed;
+  bottom: 200px;
+  right: 100px;
+  z-index: 888;
+}
+.nav .n1 {
+  width: 50px;
+  height: 60px;
+  margin-bottom: 5px;
+}
+.nav .n2 {
+  width: 50px;
+  height: 60px;
+  margin-bottom: 5px;
+}
+.nav .n3 {
+  width: 50px;
+  height: 60px;
+}
+.nav .n4 {
+  width: 50px;
+  height: 60px;
+}
+.nav .n5 {
+  display: none;
+}
+.models {
+  width: 800px;
+  height: 380px;
+  padding-top: 80px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  display: none;
+}
+.models .m1 {
+  width: 50%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  border-right: 1px solid #ccc;
+}
+.models .m1 p {
+  width: 100%;
+  height: 40px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.models .m2 {
+  text-align: center;
+}
+.models .m2 input {
+  width: 260px;
+  height: 35px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.models .m2 select {
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+}
+.models .m2 .close {
+  width: 40px;
+  height: 40px;
+  text-align: centre;
+  line-height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 30px;
+  color: #777777;
+}
+.models .m2 i {
+  width: 200px;
+  height: 40px;
+  font-style: normal;
+  display: block;
+  border-radius: 10px;
+  background-color: red;
+  color: #FFFFFF;
+  float: right;
+  text-align: center;
+  line-height: 40px;
+  margin: 30px 90px;
+}
+.mask {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.5;
+  z-index: 888;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}

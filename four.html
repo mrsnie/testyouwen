@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/animate.min.css" />
+		<link rel="stylesheet" href="css/four.css" />
+	    <script type="text/javascript" src="js/jquery-3.0.0.min.js" ></script>
+	   <script type="text/javascript" src="js/wow.min.js" ></script>
+	   <script type="text/javascript" src="js/goTop.js" ></script> 
+	</head>
+	<body>
+	  <div class="top1">	
+		<div class="top">
+			<a href=""><img src="img/logo.png" class="lo1"/></a>
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="two.html">教学理念</a></li>
+				<li><a href="three.html">课程体系</a></li>
+				<li><a href="four.html">师资力量</a></li>
+				<li><a href="five.html">学习流程</a></li>
+				<li><a href="six.html">优问课堂</a></li>
+				<li><a href="seven.html">学习一对一</a></li>
+			</ul>
+			<span>电话：400-777-5029</span>
+		</div>
+	  </div>	
+		<div class="pics wow bounceInLeft">
+			<p class="model">免费预约</p>
+		</div>
+		<div class="picter">
+			<p>每一名老师都是各<span>学科专家</span></p>
+			<p>确保老师教学经验和技能</p>	
+		</div>
+		<div class="picters">
+			<ul>
+				<li class="wow swing">教学精英</li>
+				<li class="wow swing">各省市资深教研员</li>
+				<li class="wow swing">全国各大名校</li>
+			</ul>
+			<p class="model">免费预约</p>
+		</div>
+		<div class="center">
+			<p>5轮筛选   只选最优   <span>真正实力派</span></p>
+			<ul>
+				<li class="wow bounceInLeft">来源：教学精英 全国各大名校 各省市资深教研员</li>
+				<li class="wow bounceInRight">1层筛选：扎实的学科知识(17.4%)</li>
+				<li class="wow bounceInLeft">2层筛选：精湛的教学技能(13.7%)</li>
+				<li class="wow bounceInRight">3层筛选：清晰的教学思路(8.5%)</li>
+				<li class="wow bounceInLeft">4层筛选：丰富的教学经验(6.2%)</li>
+				<li class="wow bounceInRight">5层筛选：突出的人格魅力(3.7%)</li>
+			</ul>
+		    <div class="cen1"><p class="model">免费预约</p></div>
+		</div>
+		<div class="footer">
+			<p>
+			<input type="text" placeholder="姓名" />
+			<input type="text" placeholder="手机号码" />
+			<input type="text" placeholder="电子邮箱" />
+			<select>
+				<option value="">阶段</option>
+				<option value="">小学</option>
+				<option value="">初中</option>
+				<option value="">高中</option>
+				<option value="">冲刺班</option>
+			</select>
+			<select>
+				<option value="">年级</option>
+				<option value="">一年级</option>
+				<option value="">二年级</option>
+				<option value="">三年级</option>
+				<option value="">四年级</option>
+				<option value="">五年级</option>
+				<option value="">六年级</option>
+			</select>
+			<select>
+				<option value="">科目</option>
+				<option value="">语文</option>
+				<option value="">数学</option>
+				<option value="">英语</option>
+			</select>
+			</p>
+			<p>Copyright &copy; 上海优问教育科技有限公司</p>
+		</div>
+		<div class="nav">
+			<div class="n1"><img src="img/wechatcode.png"/></div>
+			<div class="n5"><img src="img/codepic.png"/></div>
+			<div class="n2"><img src="img/lineserver.png"/></div>
+			<div class="n3"><img src="img/backtop.png"/></div>
+			<div class="n4"><img src="img/gotop.png"/></div>
+		</div>
+		<div class="models">
+	    	<div class="m1">
+	    		<p>超小组 &nbsp;分层次&nbsp; 强互动</p>
+	    		<p>全流程强化中小学生学习动力</p>
+	    		<img src="img/mtk_boy.png" />
+	    	</div>
+	    	<div class="m2">
+	    		<p><input type="text" placeholder="姓名"/></p>
+	    		<p><input type="text" placeholder="手机号"/></p>
+	    		<p><input type="text" placeholder="邮箱"/></p>
+	    		<select></select>
+	    		<select></select>
+	    		<select></select>
+	    		<p class="close"><img src="img/closeico.png"/></p>
+	    		<i>免费预约体验</i>
+	    	</div>
+	    </div>	
+		<div class="mask"></div>
+	</body>
+	<script type="text/javascript">
+	   new WOW().init();
+		$(function(){
+			$(".n4").goTop({"animate":"slide","speed":"2000"});
+			   $(".n4").css("display","none");
+			$(".n3").mouseover(function(){
+				 $(".n4").css("display","block");
+				 $(".n3").css("display","none");
+			})
+			$(".n4").mouseout(function(){
+				 $(".n4").css("display","none");
+				 $(".n3").css("display","block");
+			});
+		 $(".n1").mouseover(function(){
+				 $(".n5").css({"display":"block","position":"absolute","top":"0","left":"-120px" });
+			})
+		$(".n1").mouseout(function(){
+			$(".n5").css("display","none");
+		})	
+		//模态框
+		$(".model").click(function(){
+				showModel();
+				$(window).resize(function(){
+					var vW=$(window).width();
+			var vH=$(window).height();
+			var mW=$(".models").outerWidth();
+			var mH=$(".models").outerHeight();
+			$(".models").css({'left':(vW-mW)/2+"px",'top':(vH-mH)/2+"px"});	
+				});
+		});
+		function showModel(){
+			$(".models").fadeIn();
+			$(".mask").fadeIn();
+			var vW=$(window).width();
+			var vH=$(window).height();
+			var mW=$(".models").outerWidth();
+			var mH=$(".models").outerHeight();
+			$(".models").css({'left':(vW-mW)/2+"px",'top':(vH-mH)/2+"px"});
+		}
+		 $(".close").click(function(){
+		 	$(".models").css("display","none");
+		 	$(".mask").css("display","none");
+		 });
+		
+     });
+	</script>
+</html>
